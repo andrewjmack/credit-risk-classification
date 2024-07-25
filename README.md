@@ -3,10 +3,8 @@ Univ of Denver Data Analytics | July 2024 | Andrew Mack
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* The purpose of this analysis was to train and evaluate a model based on loan risk.
-* The dataset consisted of historical lending activity from a peer-to-peer lending services company to build the model to identify the creditworthiness of borrowers. Over 77,000 records comprised the data with columns for:
+* The purpose of this analysis was to train and evaluate a model based on loan risk using pre-classified loan data, for potential use in future prediction of the creditworthiness of borrowers based on the numerical features in the dataset. This README summarizes the data and its handling, decision making involving modeling and supervised learning, subsequent analysis, and conclusions on the efficacy of the model.
+* The dataset consisted of historical lending activity from a peer-to-peer lending services company. Over 77,000 records comprised the data with columns for:
     - loan size
     - interest rate
     - borrower income
@@ -18,7 +16,12 @@ In this section, describe the analysis you completed for the machine learning mo
     
 ![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/data_types.png "Initial Data")
 
-* Explain what financial information the data was on, and what you needed to predict.
+* After reading the CSV file data into a Pandas Dataframe, the data types were reviewed along with the generation of a summary statistics table for the benefit of initial exploration and understanding of the data. An initial observation was that the mean value of 'derogatory remarks' (negative items on a borrower's credit report such as missed payments, bankruptices or foreclosures [1]) was greater than the median value of 0, with those central tendencies initially indicating that a majority of borrowing records the set had no negative credit marks; this is unsurprising given a practical expectation that a lending institution would likely struggle to remain in business if increased loan risk and delinquency were in the majority.
+
+![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/summ_stats.png "Summary Statistics")
+
+
+Explain what financial information the data was on, and what you needed to predict.
 
 
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
@@ -48,3 +51,8 @@ For example:
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
 If you do not recommend any of the models, please justify your reasoning.
+
+## Resources
+[1]: "What are derogatory marks and what do they mean?" Capital One: https://www.capitalone.com/learn-grow/money-management/derogatory-credit/
+- Initial dataset provided by EdX/Univ of Denver
+- Course class sessions, slide content and activities
