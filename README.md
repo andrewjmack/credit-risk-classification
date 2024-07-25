@@ -100,7 +100,7 @@ However, there are several real-world considerations to be made, among which are
 
 * False positives that lead to the denial of creditworthy applicants risks losing customers, damaging the institution's reputation, and the potential for drawing unwanted regulatory scrutiny (with banking/finance a highly regulated industry and at risk for damaging legal penalties)
  
-* Recommendations:
+** Recommendations: **
 
     - An outside audit of the model to inform further refinement
     - Comparison relative to best-in-class industry classification scores for similar modeling efforts
