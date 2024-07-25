@@ -1,6 +1,20 @@
 # credit-risk-classification
 Univ of Denver Data Analytics | July 2024 | Andrew Mack
 
+## Table of Contents: 
+
+1. [Repo Contents](#repo-contents)
+
+2. [Overview of the Analysis](#overview-of-the-analysis)
+
+3. [Results](#results)
+
+4. [Summary](#summary)
+
+5. [Resources](#resources)
+
+## Repo Contents
+
 This repo consists of:
 - a README document containing process details and analysis of a supervised learning model for credit risk classification
 - a Credit_Risk folder containing:
