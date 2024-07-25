@@ -16,7 +16,7 @@ In this section, describe the analysis you completed for the machine learning mo
     - total debt
     - loan status (binary)
     
-
+![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/data_types.png "Initial Data")
 
 * Explain what financial information the data was on, and what you needed to predict.
 
@@ -29,6 +29,8 @@ In this section, describe the analysis you completed for the machine learning mo
 * Logistic Regression was utilized in particular as a statistical method for predicting binary outcomes from data, as the intention of the model is to predict whether a potential borrower is either creditworthy or uncreditworthy. E.g., a value of "0" in the “loan_status” column means that the loan is healthy; a value of "1" indicates the loan has a high risk of defaulting.  
 
 ## Results
+
+
 
 Using a bulleted, describe the accuracy, precision and recall scores of all machine learning model(s).
 
