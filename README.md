@@ -36,31 +36,33 @@ Univ of Denver Data Analytics | July 2024 | Andrew Mack
 
 ###  Step 4: Fit a logistic regression model by using the training data (`X_train` and `y_train`)
 * LogisticRegression ("LR") was imported from the SciKitLearn library.
+    * A LR model was utilized in particular as a statistical method for predicting binary outcomes from data, as the intention of the model is to predict whether a potential borrower is either creditworthy or NOT creditworthy. E.g., a value of "0" in the “loan_status” column means that the loan is healthy; a value of "1" indicates the loan has a high risk of defaulting. LR is preferred for binary classification due its use of a sigmoid (squashing) function.
 * A LR model was instantiated with a random state parameter of 1.
 * The model was fit (trained) on the X_train and y_train data subsets.
-* A LR model was utilized in particular as a statistical method for predicting binary outcomes from data, as the intention of the model is to predict whether a potential borrower is either creditworthy or NOT creditworthy. E.g., a value of "0" in the “loan_status” column means that the loan is healthy; a value of "1" indicates the loan has a high risk of defaulting.
+* The model was then validated with the smaller subset of testing data.
 
 ### Step 5: Make predictions on the testing data labels by using the testing feature data (X_test) and the fitted model
+* The model predicted labels for unclassified data.
 
 ### Step 6: Evaluating the model’s performance
-![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/confusion_matrix.png "Confusion Matris")
+* A confusion matrix and classification report were generated as critical aids in judging the predictive power and  understand the positi
+![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/confusion_matrix.png "Confusion Matrix")
 
 ![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/classification_report.png "Classification Report")
 
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+![alt-text](https://github.com/andrewjmack/credit-risk-classification/blob/main/Credit_Risk/Screenshots/pos_neg.png)
 
 ## Results
 
-
-Using a bulleted, describe the accuracy, precision and recall scores of all machine learning model(s).
-
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Accuracy:
+- How often the model is correct; the ratio of correctly predicted observations to the total number of observations.
+- Description of Model Accuracy, Precision, and Recall scores.
+* Precision:
+-  The ratio of correctly predicted positive observations to the total predicted positive observations: "For all the individuals who were classified by the model as being a credit risk, how many actually were a credit risk?"
+- Description of Model Accuracy, Precision, and Recall scores.
+* Recall:
+- The ratio of correctly predicted positive observations to all predicted observations for that class: "For all the loans that are a credit risk, how many were classified by the model as being a credit risk?"
+- Description of Model Accuracy, Precision, and Recall scores.
 
 ## Summary
 
